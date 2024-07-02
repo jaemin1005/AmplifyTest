@@ -5,7 +5,7 @@
   "main": "./dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server" : "tsc src/server/app.ts"
+    "server" : "ts-node src/server/app.ts"
   },
   "author": "",
   "license": "ISC",
