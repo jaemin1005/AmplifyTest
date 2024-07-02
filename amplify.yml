@@ -1,27 +1,14 @@
 version: 1
-backend:
-  phases:
-    preBuild:
-      commands:
-        - npm ci --prefer-offline
-    build:
-      commands:
-        - npm run build
-    postBuild:
-      commands:
-        - npm start &
 frontend:
   phases:
     preBuild:
       commands:
-        - npm ci --prefer-offline
+        - nvm use 18
+        - npm install
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
