@@ -4,9 +4,9 @@
   "description": "",
   "main": "./dist/server/app.js",
   "scripts": {
-    "start": "ts-node src/server/index.ts",
+    "start": "ts-node src/index.ts",
     "build": "tsc",
-    "serve": "node dist/server/index.js",
+    "serve": "node dist/index.js",
     "postbuild": "chmod +x bin/postbuild.sh && ./bin/postbuild.sh"
   },
   "author": "",
